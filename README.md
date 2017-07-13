@@ -1,9 +1,7 @@
 # Fog Detection with Domain Adaptation Networks
 
-## Models
-dann_mnist.ipynb -- DANN (Ganin, 2016) on MNIST and MNIST-M (PyTorch).
+Fog is a difficult to predict and very local weather phenomena. With computer vision, development and movement of fog can be monitored with camera systems. Image classification algorithms can help classify the density of the fog that is present on the captured image. Images accompanied with a MOR visibility label (obtained from scatterometers) can be used to train these algorithms.
 
-alm_mnistm_eval.ipynb -- ALM (Ash, 2017) on MNIST and MNIST-M (PyTorch).
+The problem is that fog must also be detectable from locations other than where scatterometers are available. This highlights the importance of image classification algorithms to be sensitive to fog in other locations as well. In other words, the algorithm should generalize.
 
-fog_detection.ipynb -- Fog detection with InceptionV3 on De Bilt and Cabauw weather station images (Keras).
-
+In this repository, several deep convolutional neural networks are evaluated for their generalization capacity to recognize fog in other locations. Also, some experiments with domain adaptation networks (the field of study concerned with generalization) can be found.

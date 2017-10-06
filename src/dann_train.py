@@ -52,7 +52,6 @@ f_optimizer = optim.SGD(f_ext.parameters(), lr=learning_rate, momentum=0.9)
 # load source domain dataset
 (Xs_train, ys_train), (Xs_test, ys_test) = data_loader(source_data)
 
-if target_data
 # same lengths as USPS dataset
 (Xs_train, ys_train), (Xs_test, ys_test) = (Xs_train[:7291], ys_train[:7291]), (Xs_test[:2007], ys_test[:2007])
 # # concat MNIST images as channels to match number of MNIST-M channels
